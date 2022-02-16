@@ -7,8 +7,18 @@
 
 // TODO: declare função manhattan aqui. Veja abaixo como ela será usada
 
+int modulo(int n) {
+    int a;
+    a = n;
+    if (n < 0) {
+        a = -n;
+    }
+    return a;
+}
 
-
+int manhattan(int x1, int y1, int x2, int y2) {
+    return modulo(x1 - x2) + modulo(y1 - y2);
+}
 
 // não mexer
 int main() {
